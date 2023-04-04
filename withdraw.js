@@ -18,7 +18,7 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
     else{
     const totalWithdrawAmount = previousWithdrawAmount + newWithdrawAmount;
     withdrawField.innerText = totalWithdrawAmount;
-    const newTotalBalance = previousBalanceAmount - totalWithdrawAmount;
+    const newTotalBalance = previousBalanceAmount - newWithdrawAmount;
     balanceField.innerText = newTotalBalance;
     }
 
